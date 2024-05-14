@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 const router = express.Router();
-
+``;
 // CREATE
 app.post("/", (req, res, next) => {
   res.send("hello world");
@@ -13,7 +13,7 @@ app.post("/", (req, res, next) => {
 
 // READ
 app.get("/", (req, res, next) => {
-  res.send("hello world");
+  res.send("Server Proof of Life");
 });
 
 // UPDATE
