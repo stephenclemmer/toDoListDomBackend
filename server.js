@@ -17,9 +17,14 @@ app.post("/", (req, res, next) => {
   res.send("hello world");
 });
 
+// READ ON PAGE LOAD
+app.get("/", (req, res, next) => {
+  res.status(200).send("Server Proof of Life");
+});
+
 // READ
 app.get("/", (req, res, next) => {
-  res.send("Server Proof of Life");
+  res.status(200).send("Server Proof of Life");
 });
 
 // UPDATE
